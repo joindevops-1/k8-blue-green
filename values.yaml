@@ -1,4 +1,4 @@
 deployment:
   imageVersion: blue-1.0
   appTrack: blue
-  app-secondary: green
+  appSecondary: green

@@ -5,13 +5,13 @@ metadata:
   labels:
     purpose: blue-green
     project: roboshop
-    app-secondary: {{ .Values.service.app-secondary }}
+    app-secondary: {{ .Values.service.appSecondary }}
 spec:
   type: LoadBalancer
   selector:
     purpose: blue-green
     project: roboshop
-    app-track: {{ .Values.service.app-secondary }}
+    app-track: {{ .Values.service.appSecondary }}
   ports:
     - protocol: TCP
       port: 80 # service port
